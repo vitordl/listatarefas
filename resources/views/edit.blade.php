@@ -1,6 +1,6 @@
 @extends('layouts.layout_main')
 
-<title>Edit - ToDoList</title>
+<title>ToDoList</title>
 
 
 @section('outros')

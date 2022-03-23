@@ -1,5 +1,5 @@
 @extends('layouts.layout_main')
-<title>Home - ToDoList</title>
+<title>ToDoList</title>
 
 @section('conteudo')
 
@@ -17,7 +17,7 @@
                 <table class="table">             
                     <thead class="table-estilo">
                       <tr>  
-                        <th class="col-xl-8 col-sm-7 text-center">TASKS</th>
+                        <th class="col-xl-8 col-sm-7 text-center">HIDDEN TASKS</th>
                         <th class="col-xl-4 col-sm-5 minha_tabela_acoes text-center">ACTIONS</th>
                       </tr>
                     </thead>
@@ -28,10 +28,10 @@
                       @if ($tf->done != null)
                           <td class="minha_tabela ">{{ $tf->task }} <span class="status_task_pend">pending</span></td></td>
                       @else
-                          <td class="minha_tabela ">{{ $tf->task }} <span class="status_task_done">done</span></td></td>
+                          <td class="minha_tabela">{{ $tf->task }} <span class="status_task_done">done</span></td></td>
                       @endif
                         
-                        <td class="minha_tabela minha_tabela_linhas text-lg-center ">
+                        <td class="minha_tabela minha_tabela_linhas text-lg-center especifico_icone">
                           @if ($tf->done != null) {{--se existe um valor data faça--}}
                             <a href="{{route('undone', $tf->id)}}"><i class="far fa-check-square icone_uncheck fa-lg "></i></a>
                           @else {{--nao existe um valor de data, faça--}}
@@ -40,7 +40,7 @@
                                                     
                          {{-- <a href="{{ route('edit', $tf->id) }}" ><i class="fas fa-edit fa-lg "></i></i></a> --}}
                           @if ($tf->visible == 1)
-                            <a href="{{route('hide', $tf->id)}}"><i class="fas fa-eye  fa-lg mx-3"></i></a>
+                            <a href="{{route('hide', $tf->id)}}"><i class="fas fa-eye fa-lg mx-3"></i></a>
                           @else
                           <a href="{{route('view_hide', $tf->id)}}"><i class="fas fa-eye-slash fa-lg mx-3"></i></a>
                           @endif

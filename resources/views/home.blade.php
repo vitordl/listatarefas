@@ -1,5 +1,5 @@
 @extends('layouts.layout_main')
-<title>Home - ToDoList</title>
+<title>ToDoList</title>
 
 @section('conteudo')
 
@@ -47,7 +47,7 @@
                           <a href="{{route('view_hide', $tf->id)}}"><i class="fas fa-eye text-danger  fa-lg mx-3"></i></a>
                           @endif
                           
-                          <a href="{{route('deletar', $tf->id, ['valor' => 'y'])}}"><i class="fas fa-trash-alt text-danger fa-lg "></i></a>
+                          <a href="{{route('deletar', $tf->id)}}"><i class="fas fa-trash-alt text-danger fa-lg "></i></a>
                         </td>
                     </tr>
                     

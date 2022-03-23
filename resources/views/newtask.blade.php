@@ -1,6 +1,6 @@
 @extends('layouts.layout_main')
 
-<title>Novo - ToDoList</title>
+<title>New - ToDoList</title>
 
 
 @section('conteudo')
