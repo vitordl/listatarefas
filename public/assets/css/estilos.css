@@ -1,0 +1,59 @@
+
+
+.navbar{
+    background-color: rgb(15, 59, 77);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color:white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color:rgb(255, 81, 0);
+    text-transform: uppercase;
+    text-decoration: overline;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.5s ease-out;
+}
+
+
+.table-estilo{
+    background-color: rgb(15, 59, 77);
+    color:rgb(255, 81, 0);
+    
+}
+
+
+
+.btn-outline-info{
+    border-color: rgb(255, 81, 0);
+    color:rgb(255, 81, 0);
+}
+
+.btn-outline-info:hover{
+    background: rgb(255, 81, 0);
+    border-color:rgb(255, 81, 0);
+    color:white;
+}
+
+.btn-outline-danger{
+    border-color: rgb(15, 59, 77);
+    color:rgb(15, 59, 77);
+}
+
+.btn-outline-danger:hover{
+    background: rgb(15, 59, 77);
+    border-color:rgb(15, 59, 77);
+    color: white;
+
+}
+
+.btn-salvar-estilo{
+    background-color: rgb(15, 59, 77);
+    color: rgb(255, 81, 0);
+}
+
+.btn-salvar-estilo:hover{
+    color:white;
+}
