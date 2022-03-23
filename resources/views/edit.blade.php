@@ -11,7 +11,7 @@
                     <h4 class="">Task:</h4>
                     <input type="text" name="campo_texto" class="form-control" value="{{ $tarefas->task }}">
 
-                    <input type="submit" value="Update" class="btn btn-info my-3">
+                    <input type="submit" value="Update" class="btn btn-outline-danger my-3">
 
                     <a href="{{ route('home') }}" class="btn btn-light">Cancelar</a>
                 </form>

@@ -61,8 +61,13 @@ class Controlador extends Controller
     }
 
    //DESTROY para deletar de acordo com o id
-    public function destroy($id)
+    public function deletar($id)
     {
-        
+        $tarefas = Tarefa::find($id);
+        $tarefas->delete();
+        $tarefas->save();
+
+        return redirect()->route('home');
+
     }
 }

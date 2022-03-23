@@ -12,25 +12,27 @@
                 <a href="{{ route('newtask') }}" class="btn btn-outline-danger ">Listar Invisibles</a>
 
                 <div class="my-4"></div>
-                
+
+              
                 
                 <div class="table-responsive">
                 <table class="table">             
-                    <thead class="table-estilo ">
-                      <tr>
-                        <th scope="col">TAREFAS</th>
-                        <th scope="col">AÇÕES</th>
-                      
+                    <thead class="table-estilo">
+                      <tr>  
+                        <th class="col-xl-8 col-sm-7 text-center">TAREFAS</th>
+                        <th class="col-xl-4 col-sm-5 minha_tabela_acoes text-center">AÇÕES</th>
                       </tr>
                     </thead>
                 
                     <tbody>
                     @foreach ($tarefa as $tf)
-                    <tr>
-                        <td>{{ $tf->task }}</td>
-                        <td><a href="{{ route('edit', $tf->id) }}"><i class="fa fa-pencil mx-2 text-danger"></i></a>
-                          <a href="#"><i class="fa fa-check text-success"></i></a>
-                          <a href="#"><i class="fa fa-eye mx-2"></i></a>
+                    <tr  class="">
+                        <td class="minha_tabela ">{{ $tf->task }}</td>
+                        <td class="minha_tabela minha_tabela_linhas text-lg-center ">
+                          <a href="#"><i class="fas fa-check-square text-success fa-lg mx-3"></i></a>
+                          <a href="{{ route('edit', $tf->id) }}" ><i class="fas fa-edit fa-lg "></i></i></a>
+                          <a href="#"><i class="fas fa-eye  fa-lg mx-3"></i></a>
+                          <a href="{{route('deletar', $tf->id)}}"><i class="fas fa-trash-alt text-danger fa-lg "></i></a>
                         </td>
                     </tr>
                     

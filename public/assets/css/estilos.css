@@ -4,18 +4,17 @@
     background-color: rgb(15, 59, 77);
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link:link {
     color:white;
+    
 }
 
 .navbar-nav .nav-item .nav-link:hover {
     color:rgb(255, 81, 0);
-    text-transform: uppercase;
-    text-decoration: overline;
     font-weight: 600;
-    font-size: 1em;
-    transition: all 0.5s ease-out;
+           
 }
+
 
 
 .table-estilo{
@@ -57,3 +56,50 @@
 .btn-salvar-estilo:hover{
     color:white;
 }
+
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    .minha_tabela{
+        display: block;
+    }
+
+    .minha_tabela_linhas{
+        margin-bottom: 25px;
+    }
+
+    .minha_tabela_acoes{
+        display: none;
+    }
+
+    .btn-outline-info, .btn-outline-danger{
+        margin-bottom: 7px;
+        
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .minha_tabela{
+        display: block;
+    }
+
+    .minha_tabela_linhas{
+        margin-bottom: 25px;
+    }
+
+    .minha_tabela_acoes{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+@media (min-width: 1200px) { }

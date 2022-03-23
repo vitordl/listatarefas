@@ -26,3 +26,5 @@ Route::post('salvar', 'Controlador@salvar')->name('salvar');
 Route::get('edit/{id}', 'Controlador@edit')->name('edit');
 
 Route::post('update/{id}', 'Controlador@update')->name('update');
+
+Route::get('deletar/{id}', 'Controlador@deletar')->name('deletar');
