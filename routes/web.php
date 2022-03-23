@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('home', 'Controlador@home')->name('home');
+Route::get('/', 'Controlador@home')->name('home');
 
 Route::get('newtask', 'Controlador@newtask')->name('newtask');
 
