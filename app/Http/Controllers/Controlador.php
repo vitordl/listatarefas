@@ -11,8 +11,17 @@ class Controlador extends Controller
     //INDEX apresenta a pagina home
     public function home() 
     {
-        $tarefa = Tarefa::orderBy('done', 'desc')->get();   //tarefa = select * from tarefas
+        $tarefa = Tarefa::where('visible', 1)->orderBy('done', 'desc')->get();   //tarefa = select * from tarefas
         return view('home', ['tarefa' => $tarefa]);
+    }
+
+    public function invisible(){
+        $tarefa = Tarefa::where('visible', 0)->orderBy('done', 'desc')->get();   //tarefa = select * from tarefas
+        return view('invisible', ['tarefa' => $tarefa]);
+    }
+
+    public function about(){
+        return view('about');
     }
 
     
@@ -60,14 +69,69 @@ class Controlador extends Controller
         return redirect()->route('home');
     }
 
+    
    //DESTROY para deletar de acordo com o id
     public function deletar($id)
     {
         $tarefas = Tarefa::find($id);
-        $tarefas->delete();
+        $tarefasview = $tarefas->visible;
+        $tarefas->delete();       
+        $tarefas->save(); 
+        
+        if($tarefasview == 1){
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('invisible');
+        }   
+       
+    }
+
+    public function done($id){
+        $tarefas = Tarefa::find($id);
+        $tarefasview = $tarefas->visible;
+        $tarefas->done = now();
+        $tarefas->save();
+
+        if($tarefasview == 1){
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('invisible');
+        }
+        
+    }
+
+    public function undone($id){
+        $tarefas = Tarefa::find($id);
+        $tarefasview = $tarefas->visible;
+        $tarefas->done = null;
+        $tarefas->save();
+
+        if($tarefasview == 1){
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('invisible');
+        }
+    }
+
+
+    public function hide($id){
+        $tarefas = Tarefa::find($id);
+        $tarefas->visible = 0;
         $tarefas->save();
 
         return redirect()->route('home');
-
     }
+
+    public function view_hide($id){
+        $tarefas = Tarefa::find($id);
+        $tarefas->visible = 1;
+        $tarefas->save();
+
+        return redirect()->route('invisible');
+    }
+    
+
+
+
+    
 }

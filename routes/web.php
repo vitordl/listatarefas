@@ -27,4 +27,21 @@ Route::get('edit/{id}', 'Controlador@edit')->name('edit');
 
 Route::post('update/{id}', 'Controlador@update')->name('update');
 
+
 Route::get('deletar/{id}', 'Controlador@deletar')->name('deletar');
+Route::get('deletarInvisivel/{id}', 'Controlador@deletarInvisivel')->name('deletarInvisivel');
+
+//botoes done, undone
+Route::get('done/{id}', 'Controlador@done')->name('done');
+
+Route::get('undone/{id}', 'Controlador@undone')->name('undone');
+
+Route::get('hide/{id}', 'Controlador@hide')->name('hide');
+
+Route::get('view_hide/{id}', 'Controlador@view_hide')->name('view_hide');
+
+//listas somente os invisiveis
+Route::get('invisible', 'Controlador@invisible')->name('invisible');
+
+//about
+Route::get('about', 'Controlador@about')->name('about');

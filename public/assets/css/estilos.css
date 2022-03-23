@@ -57,6 +57,28 @@
     color:white;
 }
 
+.status_task_pend{
+    background-color: rgb(233, 235, 148);
+    border-radius: 10px;
+    font-size: 11px;
+    padding:2px;
+}
+
+.status_task_done{
+    background-color: rgb(169, 245, 126);
+    border-radius: 10px;   
+    font-size: 11px;
+    padding:2px;
+}
+
+.icone_check{
+    color:rgb(36, 141, 50);
+}
+
+.icone_uncheck{
+    color:rgb(233, 235, 148);
+}
+
 
 
 

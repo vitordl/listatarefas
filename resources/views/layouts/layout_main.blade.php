@@ -31,17 +31,13 @@
                 <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('newtask') }}">Criar novo</a>
+                <a class="nav-link" href="{{ route('newtask') }}">New Task</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Editar</a>
+                <a class="nav-link" href="{{route('about')}}">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alterar <i class=""></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+              
+            
               
             </ul>
             

@@ -14,9 +14,9 @@
                     <h4 class="">Task:</h4>
                     <input type="text" name="campo_texto" class="form-control">
 
-                    <input type="submit" value="Salvar" class="btn btn-salvar-estilo my-3">
+                    <input type="submit" value="Save" class="btn btn-salvar-estilo my-3">
 
-                    <a href="{{ route('home') }}" class="btn btn-light">Cancelar</a>
+                    <a href="{{ route('home') }}" class="btn btn-light">Cancel</a>
                 </form>
             </div>
         </div>
