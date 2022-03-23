@@ -28,9 +28,9 @@
                     @foreach ($tarefa as $tf)
                     <tr  class="">
                       @if ($tf->done != null)
-                          <td class="minha_tabela ">{{ $tf->task }} <span class="status_task_pend">pending</span></td>
+                          <td class="minha_tabela "><span class="status_task_pend">pending</span> {{ $tf->task }} </td>
                       @else
-                          <td class="minha_tabela ">{{ $tf->task }} <span class="status_task_done">done</span></td>
+                          <td class="minha_tabela "><span class="status_task_done">done</span> {{ $tf->task }} </td>
                       @endif
                         
                         <td class="minha_tabela minha_tabela_linhas text-lg-center ">

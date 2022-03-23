@@ -91,7 +91,13 @@
     }
 
     .minha_tabela_linhas{
-        margin-bottom: 25px;
+        margin-bottom: 60px;
+        margin-top:10px;
+    }
+
+    i{
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .minha_tabela_acoes{
