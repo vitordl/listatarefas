@@ -45,3 +45,11 @@ Route::get('invisible', 'Controlador@invisible')->name('invisible');
 
 //about
 Route::get('about', 'Controlador@about')->name('about');
+
+
+
+//pagina de teste pra tentar 'replicar' um layout
+Route::get('/pagina', function(){
+    return view('pagina');
+});
+
