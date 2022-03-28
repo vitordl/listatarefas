@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\testeRequest;
 use Illuminate\Http\Request;
 use App\Models\Tarefa;
 
@@ -132,6 +133,14 @@ class Controlador extends Controller
     
 
 
+
+    public function teste_validacao_login(testeRequest $req){
+        $req->validated();
+        $usuario = $req->input('usuario');
+        return view('teste_validacao_login', ['usuario' => $usuario]);
+
+
+    }
 
     
 }

@@ -53,3 +53,16 @@ Route::get('/pagina', function(){
     return view('pagina');
 });
 
+Route::get('/teste_login', function(){
+    return view('teste_login');
+});
+
+Route::post('teste_validacao_login', 'Controlador@teste_validacao_login')->name('teste_validacao_login');
+
+
+// eu nao tava nem usando isso 
+// Route::get('logadoteste', function(){
+//     return view('logadoteste');
+// });
+
+
