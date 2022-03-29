@@ -66,3 +66,7 @@ Route::post('teste_validacao_login', 'Controlador@teste_validacao_login')->name(
 // });
 
 
+//uma route para praticar um pouco as session
+Route::get('teste_session', 'Controlador@teste_session');
+
+

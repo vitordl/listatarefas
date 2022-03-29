@@ -142,5 +142,51 @@ class Controlador extends Controller
 
     }
 
+    public function teste_session(){
+
+       // session()->put('nome', 'Vitor de lucca');
+       //session()->put('nome2', 'Ciclano');
+       
+
+        //session()->forget('nome2');
+        //session()->flush();
+        $clientes = [
+            [
+            'nome' => 'vitor',
+            'telefone' => '33333333',
+            'cargo' => 'TI'
+            ],
+
+            [
+            'nome' => 'joao',
+            'telefone' => '7777777',
+            'cargo' => 'adm'
+            ],
+
+            [
+            'nome' => 'maria',
+            'telefone' => '555555',
+            'cargo' => 'comercial'
+            ],
+
+            [
+            'nome' => 'joana',
+            'telefone' => '666666',
+            'cargo' => 'qualidade'
+            ],
+
+          
+        ];
+
+       // session()->put($clientes);
+        // session()->forget($clientes['nome']);
+
+
+        echo "<pre>";
+        print_r(session()->all());
+
+
+    }
+
     
 }
