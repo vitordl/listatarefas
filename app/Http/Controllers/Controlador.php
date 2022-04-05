@@ -14,6 +14,7 @@ class Controlador extends Controller
     {
         $tarefa = Tarefa::where('visible', 1)->orderBy('done', 'desc')->get();   //tarefa = select * from tarefas
         return view('home', ['tarefa' => $tarefa]);
+       //return response()->json(['tarefa' => $tarefa]);
     }
 
     public function invisible(){
