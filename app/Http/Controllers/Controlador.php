@@ -12,9 +12,10 @@ class Controlador extends Controller
     //INDEX apresenta a pagina home
     public function home() 
     {
+        //$tarefa = Tarefa::all();
         $tarefa = Tarefa::where('visible', 1)->orderBy('done', 'desc')->get();   //tarefa = select * from tarefas
         return view('home', ['tarefa' => $tarefa]);
-       //return response()->json(['tarefa' => $tarefa]);
+       //return response()->json($tarefa);
     }
 
     public function invisible(){
