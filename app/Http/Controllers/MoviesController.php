@@ -37,9 +37,7 @@ class MoviesController extends Controller
             [
                 'id' => 'numeric',
                 'name' => 'required'
-            ]
-
-        );
+            ]);
         return response()->json($request->all());
     }
 
