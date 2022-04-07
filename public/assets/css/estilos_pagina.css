@@ -1,24 +1,76 @@
 
 
+.card_left{
+    
+    height:135px;
+    
+}
 
 
 
 
+.flex-column .nav-link{
+    color:black;
+    border: 0.5px solid rgb(230, 229, 229);
+    
+}
+
+.flex-column .nav-link:hover{
+    color: rgb(57, 125, 189);
+}
+
+.flex-column .nav-link.active { 
+    border: 1px solid rgb(68, 175, 194);
+}
+
+
+
+.flex-column .nav-item .nav-link.active{
+    border-left: 10px solid rgb(0, 132, 255);
+}
+
+
+
+@media (max-width: 200px){
+    .nav-link{
+        font-size: 10px;
+    }
+
+}
 
 @media (max-width: 575.98px) { 
+    h1{
+        color: red;
+    }
+    
    .margem_especial{
-       margin-bottom: 50px;
+       margin-bottom: 10px;
+      
    }
+
+   .margem_afastamento{
+       width: 95vw;
+       margin-left:13px;
+   }
+
+
+   
+
 }
     
 @media (min-width: 576px) and (max-width: 767.98px) { 
-   
-}
+    .margem_especial{
+        margin-bottom: 10px;
+    }
 
+  
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+ }
 
 @media (min-width: 1200px) { 
     .container-fluid{
