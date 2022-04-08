@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//use App\Http\Requests\MoviesRequest;
 
 class MoviesController extends Controller
 {
@@ -33,11 +34,11 @@ class MoviesController extends Controller
     }
 
     public function store(Request $request){
-        $validar = $request->validate(
+        $request->validate(
             [
-                'id' => 'numeric',
                 'name' => 'required'
-            ]);
+            ]
+        );
         return response()->json($request->all());
     }
 
