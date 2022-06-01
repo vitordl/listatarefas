@@ -1,3 +1,9 @@
+## Preview
+
+![lt2](https://user-images.githubusercontent.com/48863970/171470432-88f4e62e-262a-4cb5-891e-a04a760172d2.JPG)
+
+![lt3](https://user-images.githubusercontent.com/48863970/171470446-b460c57e-43ab-4d29-ba40-60744e99a930.JPG)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
